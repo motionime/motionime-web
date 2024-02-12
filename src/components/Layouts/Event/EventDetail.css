@@ -1,0 +1,7 @@
+.card {
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(8px) saturate(180%);
+    background-color: rgba(1, 2, 3, 0.69);;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}

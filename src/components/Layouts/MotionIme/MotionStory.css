@@ -1,0 +1,6 @@
+.motion-story {
+    background-image: linear-gradient(rgba(0, 0, 0, .69), rgba(0, 0, 0, .69)),
+        url("../../../assets/img/about/jaya.jpg");
+    background-size: cover;
+    background-position: center;
+}
