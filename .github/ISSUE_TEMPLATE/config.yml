@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord
+    url: https://discord.com/invite/motionime
+    about: Join Discord group for Disucussion
+  - name: Website
+    url: https://motionime.online/
+    about: Visit to know motionime
+  - name: Do you have any questions?
+    url: https://github.com/motionime/motionime-web/discussions/5
+    about: Feel free to ask your questions on Discord motionime or click the button here--->.
