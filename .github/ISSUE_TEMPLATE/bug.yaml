@@ -1,0 +1,100 @@
+name: 🪲 Bug Report
+description: Report an issue to help improve the project
+title: "[BUG]: "
+labels: ["bug 🐛"]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Butterfly is a bug, she is pretty but she is still a bug
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+      placeholder: |
+        1. When I click '...'
+        2. It should move to '....'
+        3. And '....'
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: Please select the operating system that you are using.
+      multiple: true
+      options:
+        - "Windows 🪟"
+        - "MacOS 🍏"
+        - "Linux 🐧"
+        - "Other"
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Please select the browser that you are using.
+      multiple: true
+      options:
+        - "Chrome 🚥"
+        - "Edge/IE 🌀"
+        - "Firefox 🦊"
+        - "Safari ⏱️"
+        - "Brave 🦁"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add relevant screenshots for the bug.
+    validations:
+      required: false
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Additional information
+      description: Add any other context about the problem here.
+    validations:
+      required: false
+  - type: dropdown
+    id: assignee
+    attributes:
+      label: Do you want to work on this issue?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+      default: 0
+    validations:
+      required: false
+  - type: checkboxes
+    id: read-code-of-conduct
+    attributes:
+      label: "Have you read the Code of Conduct?"
+      options:
+        - label: "I have read the [Code of Conduct](https://github.com/motionime/motionime-web/blob/main/CODE_OF_CONDUCT.md)"
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        You can also join [**motionime Discord**](https://discord.com/invite/motionime) for any help or support.

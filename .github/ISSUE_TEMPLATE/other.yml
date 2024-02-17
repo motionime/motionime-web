@@ -1,0 +1,41 @@
+name: Other
+description: Want to raise a different issue?
+title: "[OTHER]: "
+labels: [Other issue]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A detailed description of the issue with links and screenshots.
+    validations:
+      required: true
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Additional information
+      description: Add any other context about the issue here.
+    validations:
+      required: false
+  - type: dropdown
+    id: assignee
+    attributes:
+      label: Do you want to work on this issue?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+      default: 0
+    validations:
+      required: false
+  - type: checkboxes
+    id: read-code-of-conduct
+    attributes:
+      label: "Have you read the Code of Conduct?"
+      options:
+        - label: "I have read the [Code of Conduct](https://github.com/motionime/motionime-web/blob/main/CODE_OF_CONDUCT.md)"
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        You can also join [**motionime Discord**](https://discord.com/invite/motionime) for any help or support.
