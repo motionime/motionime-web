@@ -1,24 +1,24 @@
 .swiper-button-next,
 .swiper-button-prev {
-    color: #EEEEFF;
+  color: #eeeeff;
 }
 
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background-color: #EEEEFF;
-    opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  background-color: #eeeeff;
+  opacity: 0.5;
 }
 
 .swiper-pagination-bullet-active {
-    opacity: 1;
-    width: 13px;
-    height: 13px;
+  opacity: 1;
+  width: 13px;
+  height: 13px;
 }
 
-@media (max-width:480px) {
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #000300;
-    }
+@media (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000300;
+  }
 }

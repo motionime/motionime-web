@@ -9,7 +9,7 @@ export const EventDetail = () => {
     <div className="bg-[#000300] text-white">
       <Navbar />
       <EventDetailLayouts />
-      <Footer className="bg-inherit"/>
+      <Footer className="bg-inherit" />
     </div>
   );
 };

@@ -1,19 +1,25 @@
 .bg-support {
-    background: linear-gradient(45deg, #00D8FF, #2C73FF, theme(colors.motion_ime_purple), theme(colors.motion_ime));
-    background-size: 300% 300%;
-    animation: animate 15s ease-in-out infinite;
+  background: linear-gradient(
+    45deg,
+    #00d8ff,
+    #2c73ff,
+    theme(colors.motion_ime_purple),
+    theme(colors.motion_ime)
+  );
+  background-size: 300% 300%;
+  animation: animate 15s ease-in-out infinite;
 }
 
 @keyframes animate {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
