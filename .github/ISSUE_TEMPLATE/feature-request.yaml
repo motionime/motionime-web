@@ -1,0 +1,49 @@
+name: 💡 Feature Request
+description: Suggest a new feature for motionime Website
+title: "[FEATURE]: "
+labels: ["feature ✨"]
+body:
+  - type: textarea
+    id: what-feature
+    attributes:
+      label: What feature? Please describe
+      description: A clear and concise description of what the feature is.
+      placeholder: I want to create a new page namely /games(new route), there will be a bunch of minigames that we can play like a replicate of the Flappy Bird game but the bird is replaced using Bang Windah face. Hehe~
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add relevant screenshots for the feature.
+    validations:
+      required: false
+  - type: textarea
+    id: extra-info
+    attributes:
+      label: Additional information
+      description: Add any other context about the feature here.
+    validations:
+      required: false
+  - type: dropdown
+    id: assignee
+    attributes:
+      label: Do you want to work on this issue?
+      multiple: false
+      options:
+        - "Yes"
+        - "No"
+      default: 0
+    validations:
+      required: false
+  - type: checkboxes
+    id: read-code-of-conduct
+    attributes:
+      label: "Have you read the Code of Conduct?"
+      options:
+        - label: "I have read the [Code of Conduct](https://github.com/motionime/motionime-web/blob/main/CODE_OF_CONDUCT.md)"
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        You can also join [**motionime Discord**](https://discord.com/invite/motionime) for any help or support.
