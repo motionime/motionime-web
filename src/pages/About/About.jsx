@@ -9,7 +9,7 @@ export const About = () => {
     <>
       <Navbar />
       <AboutLayouts />
-      <Footer className="bg-gradient-to-b from-[#caadff] to-[#e6d7ff] to-55%"/>
+      <Footer className="bg-gradient-to-b from-[#caadff] to-[#e6d7ff] to-55%" />
     </>
   );
 };

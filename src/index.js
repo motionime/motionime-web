@@ -21,5 +21,5 @@ root.render(
         </TotalMemberProvider>
       </EventTitleProvider>
     </CursorProvider>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

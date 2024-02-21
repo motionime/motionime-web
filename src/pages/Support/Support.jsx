@@ -9,7 +9,7 @@ export const Support = () => {
     <>
       <Navbar className="text-primary" />
       <SupportLayouts />
-      <Footer className="bg-inherit"/>
+      <Footer className="bg-inherit" />
     </>
   );
 };

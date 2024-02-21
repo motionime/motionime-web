@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Support.css"
+import "./Support.css";
 import { Hero } from "./Hero";
 import { GeneralFAQ } from "./GeneralFAQ";
 import { OtherFAQ } from "./OtherFAQ";

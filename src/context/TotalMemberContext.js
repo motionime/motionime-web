@@ -16,7 +16,7 @@ export const TotalMemberProvider = ({ children }) => {
         handleTotal(results.byline);
       })
       .catch((err) =>
-        console.log("failed to contact discord api", err?.message)
+        console.log("failed to contact discord api", err?.message),
       )
       .finally(() => console.log("get total member discord"));
   }, []);

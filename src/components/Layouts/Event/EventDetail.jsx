@@ -25,7 +25,7 @@ export const EventDetail = () => {
       ).data;
 
       const event = results?.filter(
-        (item) => beautyPath(item?.title) === title
+        (item) => beautyPath(item?.title) === title,
       );
       setEvent(event[0]);
 
