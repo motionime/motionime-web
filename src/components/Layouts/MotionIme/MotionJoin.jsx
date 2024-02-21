@@ -39,14 +39,14 @@ export const MotionJoin = () => {
               Halo, Motion Imers.
             </p>
             <h1 className="md:text-4xl sm:text-3xl text-xl font-bold py-2">
-              Did you already join <MotionImeText />?
+              Have you already joined <MotionImeText />?
             </h1>
             <p className="mb-8">
               Join <MotionImeText isCapital /> now and be part of something
               greater than the digital realm. Unleash your excitement, exchange
               insights, and journey alongside individuals who celebrate your
               every triumph. Here, passions unite, and dreams take flight.
-              Elevate your online presence – fight to become Guardian's - your
+              Elevate your online presence – strive to become a Guardian - your
               adventure begins with <MotionImeText isCapital exclamationMarks />
             </p>
 
