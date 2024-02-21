@@ -42,7 +42,13 @@
       "react-app",
       "react-app/jest",
       "plugin:prettier/recommended"
-    ]
+    ],
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "windows"
+      ]
+    }
   },
   "browserslist": {
     "production": [
