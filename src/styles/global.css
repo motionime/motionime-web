@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-primary font-secondary bg-white overflow-x-hidden;
+  }
+
+  .section {
+    @apply h-screen w-screen;
+  }
+
+  .underline-on-hover {
+    display: inline-block;
+  }
+
+  .underline-on-hover::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: rgba(234, 234, 234, 0.56);
+    transition: width 0.3s;
+  }
+
+  .underline-on-hover:hover::after {
+    width: 100%;
+  }
+
+  .box-reflect-below {
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002, #0004);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
