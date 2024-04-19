@@ -1,8 +1,9 @@
+"use client";
+import { Ads } from "./Ads";
 import { Banner } from "./Banner";
 import { Row } from "./Row";
-import { Ads } from "./Ads";
 
-export const Event = () => {
+export default function Event() {
   return (
     <div>
       <section className="section">
@@ -24,4 +25,4 @@ export const Event = () => {
       </section>
     </div>
   );
-};
+}

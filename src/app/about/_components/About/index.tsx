@@ -11,6 +11,7 @@ import { Carousel } from "./Carousel";
 import { MotionStory } from "@/app/_components/_ui/MotionIme/MotionStory";
 import { MotionTeam } from "@/app/_components/_ui/MotionIme/MotionTeam";
 import { MotionJoin } from "@/app/_components/_ui/MotionIme/MotionJoin";
+import { Footer } from "@/app/_components/_ui/Footer";
 
 export const About = () => {
   const width = getWidth();
@@ -19,7 +20,7 @@ export const About = () => {
   return (
     <motion.div
       // 1024 === lg
-      initial={{ opacity: 0, y: `${(width as number) > 1024 ? "100%" : ""}` }}
+      initial={{ opacity: 0, y: `${(width as number) > 1024 ? "100%" : 0}` }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: "100%" }}
       transition={transition}
@@ -43,6 +44,7 @@ export const About = () => {
       <MotionStory />
       <MotionTeam />
       <MotionJoin />
+      <Footer className="bg-gradient-to-b from-[#caadff] to-[#e6d7ff] to-55%" />
     </motion.div>
   );
 };

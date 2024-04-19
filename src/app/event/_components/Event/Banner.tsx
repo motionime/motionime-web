@@ -11,15 +11,15 @@ import "swiper/css/effect-fade";
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./Banner.css";
 
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { beautyPath, minimizeString } from "@/utils/string";
 import { getWidth } from "@/utils/screen";
 import { scrollTo } from "@/utils";
 
-import { TBannerEvent } from "./type";
 import { ButtonEvent } from "@/app/_components/_ui/Button";
+import { TBannerEvent } from "@/components/Layouts/Event/type";
+import Image from "next/image";
 
 export const Banner = () => {
   const [banner, setBanner] = useState<TBannerEvent[]>([]);
@@ -42,7 +42,7 @@ export const Banner = () => {
           spaceBetween={30}
           effect={"cards"}
           loop={true}
-          navigation={width >= 1024 ? true : false}
+          navigation={(width as number) >= 1024 ? true : false}
           pagination={{
             clickable: true,
           }}
@@ -62,11 +62,13 @@ export const Banner = () => {
                   onClick={() => scrollTo(0, 0)}
                 >
                   <div className="absolute w-full h-full bg-gradient-to-r from-black"></div>
-                  <img
+                  <Image
                     className="w-full h-full object-cover object-center bg-primary"
                     src={item?.image}
                     alt={item?.title}
                     loading="lazy"
+                    width={800}
+                    height={800}
                   />
                   <div className="absolute w-full top-[20%] p-4 md:p-8 lg:py-16 lg:px-24">
                     <h1 className="text-3xl md:text-5xl font-bold">

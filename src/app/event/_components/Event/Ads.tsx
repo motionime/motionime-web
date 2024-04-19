@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
 import axios from "axios";
+import { useState, useCallback, useEffect } from "react";
 import { Tooltip } from "react-tooltip";
 
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
-import { TAds } from "./type";
+import { TAds } from "@/components/Layouts/Event/type";
 
 export const Ads = () => {
   const [ads, setAds] = useState<TAds[]>([]);

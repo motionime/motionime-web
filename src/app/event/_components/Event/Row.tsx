@@ -1,19 +1,22 @@
+"use client";
+
 import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
-
+import { RowProps } from "@/app/_components/_types";
+import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { Card } from "./Card";
-import { MI_API_BASE_URL } from "../../../config/motionime-api.config";
 
-export const Row = ({ title, fetchURL, rowID }) => {
+export const Row = ({ title, fetchURL, rowID }: RowProps) => {
   const [data, setData] = useState([]);
 
   const slideLeft = () => {
-    var slider = document.getElementById("slider" + rowID);
+    const slider = document.getElementById("slider" + rowID) as HTMLElement;
     slider.scrollLeft = slider.scrollLeft - 500;
   };
+
   const slideRight = () => {
-    var slider = document.getElementById("slider" + rowID);
+    const slider = document.getElementById("slider" + rowID) as HTMLElement;
     slider.scrollLeft = slider.scrollLeft + 500;
   };
 

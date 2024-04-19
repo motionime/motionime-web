@@ -33,6 +33,39 @@
     -webkit-box-reflect: below 1px
       linear-gradient(transparent, transparent, #0002, #0004);
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #eeeeff;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #eeeeff;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 13px;
+    height: 13px;
+  }
+
+  .card {
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(8px) saturate(180%);
+    background-color: rgba(1, 2, 3, 0.69);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  @media (max-width: 480px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000300;
+    }
+  }
 }
 
 html {

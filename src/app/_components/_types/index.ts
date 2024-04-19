@@ -1,5 +1,7 @@
 import { TFounder } from "@/data/founder";
 
+export type NeedToChange = any;
+
 export type ButtonEventProps = React.HTMLProps<HTMLAnchorElement> & {
   text: string;
   link: string;
@@ -20,4 +22,10 @@ export type AboutDetailProps = {
 
 export type MotionTeamCardProps = {
   data: TFounder;
+};
+
+export type RowProps = {
+  title: string;
+  fetchURL: string;
+  rowID: number;
 };

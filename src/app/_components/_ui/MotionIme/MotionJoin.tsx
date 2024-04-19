@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { MotionImeText } from "@/app/_components/_ui/MotionIme/MotionImeText";
 import { useCursorContext } from "@/context/CursorContext";
-import Image from "next/image";
 import { ButtonJoinNow } from "../Button";
 
 export const MotionJoin = () => {
