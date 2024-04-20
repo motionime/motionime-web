@@ -1,9 +1,7 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 import { transition } from "@/config/transition.config";
-import { getWidth } from "@/utils/screen";
 import { useTotalMemberContext } from "@/context/TotalMemberContext";
 import { Hero } from "./Hero";
 import { Detail } from "./Detail";
@@ -14,15 +12,13 @@ import { MotionJoin } from "@/app/_components/_ui/MotionIme/MotionJoin";
 import { Footer } from "@/app/_components/_ui/Footer";
 
 export const About = () => {
-  const width = getWidth();
   const context = useTotalMemberContext();
 
   return (
     <motion.div
-      // 1024 === lg
-      initial={{ opacity: 0, y: `${(width as number) > 1024 ? "100%" : 0}` }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: "100%" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={transition}
     >
       <Hero />
