@@ -9,7 +9,11 @@ export const MotionImeLink = ({
 }: MotionImeProps) => {
   const text = isCapital ? "Motion ime" : "motion ime";
   return (
-    <Link className={cn(`font-motion_ime`, props.className)} href={"/"}>
+    <Link
+      {...props}
+      className={cn(`font-motion_ime`, props.className)}
+      href={"/"}
+    >
       {text}
       {exclamationMarks && "!"}
     </Link>

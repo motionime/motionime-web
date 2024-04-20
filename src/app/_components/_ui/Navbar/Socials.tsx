@@ -9,7 +9,7 @@ import { cn } from "@/utils";
 export const Socials = ({ ...props }: React.HTMLProps<HTMLUListElement>) => {
   const cursor = useCursorContext();
   return (
-    <ul className={cn(`flex gap-x-4 text-lg`, props.className)}>
+    <ul {...props} className={cn(`flex gap-x-4 text-lg`, props.className)}>
       {socialsMenu.map((social, _) => {
         return (
           <li

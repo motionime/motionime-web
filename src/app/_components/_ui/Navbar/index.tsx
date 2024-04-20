@@ -19,6 +19,7 @@ export const Navbar = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
 
   return (
     <header
+      {...props}
       className={cn(
         `fixed w-full z-30 h-24 flex items-center justify-center px-2 xl:px-1 transition-all duration-700 text-white`,
         {

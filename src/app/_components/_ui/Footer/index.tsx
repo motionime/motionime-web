@@ -7,6 +7,7 @@ export const Footer = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
 
   return (
     <footer
+      {...props}
       className={cn(`w-full py-8`, props.className ?? "bg-primary text-white")}
     >
       <div className="max-w-7xl px-2 mx-auto">

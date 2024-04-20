@@ -29,6 +29,7 @@ export const AccordionContent = ({
 }: ParentComponentProps & React.HTMLProps<HTMLDivElement>) => {
   return (
     <Accordion.Content
+      {...props}
       className={cn("pt-2 pb-4 overflow-hidden", props.className)}
     >
       <div>{children}</div>
