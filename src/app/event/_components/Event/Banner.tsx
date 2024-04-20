@@ -5,6 +5,7 @@ import { Navigation, Pagination, Autoplay, EffectCards } from "swiper/modules";
 import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -19,10 +20,11 @@ import { scrollTo } from "@/utils";
 
 import { ButtonEvent } from "@/app/_components/_ui/Button";
 import { TBannerEvent } from "@/components/Layouts/Event/type";
-import Image from "next/image";
+import { useCursorContext } from "@/context/CursorContext";
 
 export const Banner = () => {
   const [banner, setBanner] = useState<TBannerEvent[]>([]);
+  const cursor = useCursorContext();
   const width = getWidth();
 
   const getBanner = useCallback(async () => {
@@ -71,13 +73,23 @@ export const Banner = () => {
                     height={800}
                   />
                   <div className="absolute w-full top-[20%] p-4 md:p-8 lg:py-16 lg:px-24">
-                    <h1 className="text-3xl md:text-5xl font-bold">
+                    <h1
+                      className="text-3xl md:text-5xl font-bold hover:cursor-text"
+                      onMouseEnter={cursor?.mouseEnterHandler}
+                      onMouseLeave={cursor?.mouseLeaveHandler}
+                    >
                       {item?.title}
                     </h1>
-                    <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200 mt-4 mb-8">
+                    <p
+                      className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200 mt-4 mb-8 hover:cursor-text"
+                      onMouseEnter={cursor?.mouseEnterHandler}
+                      onMouseLeave={cursor?.mouseLeaveHandler}
+                    >
                       {minimizeString(item?.overview, 150)}
                     </p>
                     <ButtonEvent
+                      onMouseEnter={cursor?.mouseEnterHandler}
+                      onMouseLeave={cursor?.mouseLeaveHandler}
                       text={`${
                         item?.type === "play" ? "Watch Now" : "Check Now"
                       }`}

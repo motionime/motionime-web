@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className="max-w-[1280px] mx-auto w-full h-full text-white flex">
         <div
           className="lg:w-[40%] sm:w-[60%] w-[90%] px-2 sm:mt-72 mt-36 h-max"
-          data-aos="fade-up-right"
+          data-aos="fade-down"
           data-aos-delay={500}
           onMouseEnter={cursor?.mouseEnterHandler}
           onMouseLeave={cursor?.mouseLeaveHandler}

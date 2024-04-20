@@ -9,7 +9,7 @@ import { ParentComponentProps } from "@/components/types";
 
 const AosProvider = ({ children }: ParentComponentProps) => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (

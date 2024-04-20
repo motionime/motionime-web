@@ -1,11 +1,20 @@
 "use client";
+
+import { motion } from "framer-motion";
+
 import { Ads } from "./Ads";
 import { Banner } from "./Banner";
 import { Row } from "./Row";
+import { transition } from "@/config/transition.config";
 
 export default function Event() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition}
+    >
       <section className="section">
         <div className="w-full h-full overflow-hidden">
           <Banner />
@@ -23,6 +32,6 @@ export default function Event() {
           <Ads />
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

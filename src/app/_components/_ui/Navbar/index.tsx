@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import useScroll from "@/hooks/useScroll";
 import { Drawer } from "./Drawer";
-import { Socials } from "./Socials";
+import { Socials } from "../Socials";
 import { useCursorContext } from "@/context/CursorContext";
 import { cn } from "@/utils";
 import { navbarMenu } from "@/data";

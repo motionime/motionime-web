@@ -6,9 +6,11 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { RowProps } from "@/app/_components/_types";
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { Card } from "./Card";
+import { useCursorContext } from "@/context/CursorContext";
 
 export const Row = ({ title, fetchURL, rowID }: RowProps) => {
   const [data, setData] = useState([]);
+  const cursor = useCursorContext();
 
   const slideLeft = () => {
     const slider = document.getElementById("slider" + rowID) as HTMLElement;
@@ -36,7 +38,11 @@ export const Row = ({ title, fetchURL, rowID }: RowProps) => {
     <>
       {data?.length ? (
         <div className={`${!data?.length && "hidden"}`}>
-          <h2 className="text-white font-semibold md:text-2xl px-2 py-4">
+          <h2
+            className="text-white font-semibold md:text-2xl px-2 py-4"
+            onMouseEnter={cursor?.mouseEnterHandler}
+            onMouseLeave={cursor?.mouseLeaveHandler}
+          >
             {title}
           </h2>
           <div className="relative flex items-center group">
