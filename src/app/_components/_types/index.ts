@@ -29,3 +29,17 @@ export type RowProps = {
   fetchURL: string;
   rowID: number;
 };
+
+export type TBanner = {
+  image: string;
+  title: string;
+  link: string;
+};
+
+export type TCatalog = TBanner & {
+  price: number;
+};
+
+export type CardProps = {
+  item: TCatalog;
+} & React.HTMLAttributes<HTMLDivElement>;

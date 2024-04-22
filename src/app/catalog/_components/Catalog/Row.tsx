@@ -8,7 +8,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Card } from "./Card";
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { generateDummyData } from "@/utils";
-import { TCatalog } from "./type";
+import { TCatalog } from "@/app/_components/_types";
 
 type RowProps = {
   title: string;

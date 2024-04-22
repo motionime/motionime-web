@@ -1,6 +1,6 @@
+import { TCatalog } from "@/app/_components/_types";
 import { rupiah } from "@/utils/currency";
 import { minimizeString } from "@/utils/string";
-import { TCatalog } from "./type";
 
 type CardProps = {
   item: TCatalog;

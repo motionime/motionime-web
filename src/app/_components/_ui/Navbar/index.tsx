@@ -15,7 +15,8 @@ export const Navbar = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
   const pathname = usePathname();
   const isUnderline = pathname === "/" || pathname === "/about";
   const scrolled = useScroll(700);
-  const isTextPrimary = scrolled && pathname === "/about";
+  const isTextPrimary =
+    (scrolled && pathname === "/about") || pathname === "/catalog";
 
   return (
     <header

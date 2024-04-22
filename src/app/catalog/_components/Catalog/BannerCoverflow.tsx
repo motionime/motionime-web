@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { getWidth } from "@/utils/screen";
 import { generateDummyData } from "@/utils";
-import { TBanner } from "./type";
+import { TBanner } from "@/app/_components/_types";
 
 export const BannerCoverflow = () => {
   const [banner, setBanner] = useState<TBanner[]>([]);
@@ -23,7 +23,7 @@ export const BannerCoverflow = () => {
 
   const getBanner = useCallback(async () => {
     try {
-      if (width < 768) return 0;
+      if ((width as number) < 768) return 0;
       const response = await (
         await axios.get(`${MI_API_BASE_URL}/banner-catalog.json`)
       ).data;

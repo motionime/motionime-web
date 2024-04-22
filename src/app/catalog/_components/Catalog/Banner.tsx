@@ -14,7 +14,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { getWidth } from "@/utils/screen";
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
-import { TBanner } from "./type";
+import { TBanner } from "@/app/_components/_types";
 
 export const Banner = () => {
   const [banner, setBanner] = useState<TBanner[]>([]);
@@ -22,7 +22,7 @@ export const Banner = () => {
 
   const getBanner = useCallback(async () => {
     try {
-      if (width >= 768) return 0;
+      if ((width as number) >= 768) return 0;
       const response = await (
         await axios.get(`${MI_API_BASE_URL}/banner.json`)
       ).data;
