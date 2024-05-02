@@ -19,11 +19,11 @@ import { getWidth } from "@/utils/screen";
 import { scrollTo } from "@/utils";
 
 import { ButtonEvent } from "@/app/_components/_ui/Button";
-import { TBannerEvent } from "@/components/Layouts/Event/type";
 import { useCursorContext } from "@/context/CursorContext";
+import { NeedToChange } from "@/app/_components/_types";
 
 export const Banner = () => {
-  const [banner, setBanner] = useState<TBannerEvent[]>([]);
+  const [banner, setBanner] = useState<NeedToChange[]>([]);
   const cursor = useCursorContext();
   const width = getWidth();
 
@@ -60,7 +60,7 @@ export const Banner = () => {
               <SwiperSlide key={index}>
                 <Link
                   className="w-full h-full cursor-pointer"
-                  href={beautyPath(item?.title)}
+                  href={`event/${beautyPath(item?.title)}`}
                   onClick={() => scrollTo(0, 0)}
                 >
                   <div className="absolute w-full h-full bg-gradient-to-r from-black"></div>

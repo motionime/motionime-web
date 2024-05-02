@@ -2,6 +2,10 @@ import { TFounder } from "@/data/founder";
 
 export type NeedToChange = any;
 
+export type ParentComponentProps = {
+  children: React.ReactNode;
+};
+
 export type ButtonEventProps = React.HTMLProps<HTMLAnchorElement> & {
   text: string;
   link: string;
@@ -39,7 +43,3 @@ export type TBanner = {
 export type TCatalog = TBanner & {
   price: number;
 };
-
-export type CardProps = {
-  item: TCatalog;
-} & React.HTMLAttributes<HTMLDivElement>;

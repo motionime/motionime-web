@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
+import { Support } from "./_components/Support";
 import { Footer } from "../_components/_ui/Footer";
-import { Catalog } from "./_components/Catalog";
 
 export const metadata: Metadata = {
-  title: "Motion Ime | Catalog",
+  title: "Motion Ime | Support",
 };
 
 export default function page() {
   return (
     <>
-      <Catalog />
+      <Support />
       <Footer className="bg-inherit" />
     </>
   );

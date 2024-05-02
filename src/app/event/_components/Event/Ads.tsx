@@ -5,10 +5,10 @@ import { useState, useCallback, useEffect } from "react";
 import { Tooltip } from "react-tooltip";
 
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
-import { TAds } from "@/components/Layouts/Event/type";
+import { NeedToChange } from "@/app/_components/_types";
 
 export const Ads = () => {
-  const [ads, setAds] = useState<TAds[]>([]);
+  const [ads, setAds] = useState<NeedToChange[]>([]);
 
   const getAds = useCallback(async () => {
     const response = await (

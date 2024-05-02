@@ -13,10 +13,13 @@ import { navbarMenu } from "@/data";
 export const Navbar = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
   const cursor = useCursorContext();
   const pathname = usePathname();
+  const isHidden = pathname === "/gg";
   const isUnderline = pathname === "/" || pathname === "/about";
   const scrolled = useScroll(700);
   const isTextPrimary =
-    (scrolled && pathname === "/about") || pathname === "/catalog";
+    (scrolled && pathname === "/about") ||
+    pathname === "/catalog" ||
+    pathname === "/support";
 
   return (
     <header
@@ -25,6 +28,7 @@ export const Navbar = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
         `fixed w-full z-30 h-24 flex items-center justify-center px-2 xl:px-1 transition-all duration-700 text-white`,
         {
           "text-primary": isTextPrimary,
+          hidden: isHidden,
         },
         props.className,
       )}

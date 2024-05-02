@@ -1,6 +1,10 @@
 import { useEffect, useRef } from "react";
+import { NeedToChange } from "@/app/_components/_types";
 
-export function useDocumentTitle(title, prevailOnUnmount = false) {
+export function useDocumentTitle(
+  title: NeedToChange,
+  prevailOnUnmount = false,
+) {
   const defaultTitle = useRef(document.title);
 
   useEffect(() => {

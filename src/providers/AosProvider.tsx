@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { ParentComponentProps } from "@/components/types";
+import { ParentComponentProps } from "@/app/_components/_types";
 
 const AosProvider = ({ children }: ParentComponentProps) => {
   useEffect(() => {

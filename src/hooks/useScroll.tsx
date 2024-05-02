@@ -1,7 +1,8 @@
+import { NeedToChange } from "@/app/_components/_types";
 import { useCallback, useEffect, useState } from "react";
 
 // threshold is a variable where the user scrolls to.
-export default function useScroll(threshold) {
+export default function useScroll(threshold: NeedToChange) {
   const [scrolled, setScrolled] = useState(false);
 
   const onScroll = useCallback(() => {

@@ -1,6 +1,8 @@
 import { TCatalog } from "@/app/_components/_types";
 import { rupiah } from "@/utils/currency";
 import { minimizeString } from "@/utils/string";
+import Image from "next/image";
+import Link from "next/link";
 
 type CardProps = {
   item: TCatalog;
@@ -14,8 +16,10 @@ export const Card = ({ item, ...props }: CardProps) => {
     >
       <div className="w-full h-full rounded p-1 shadow-md">
         <div className="w-full h-[60%] rounded overflow-hidden">
-          <img
+          <Image
             className="w-full h-full aspect-square bg-primary hover:scale-110"
+            width={240}
+            height={360}
             src={item?.image}
             alt={item?.title}
             loading="lazy"
@@ -27,14 +31,14 @@ export const Card = ({ item, ...props }: CardProps) => {
           </div>
           <p className="font-bold my-2">{rupiah(item?.price)}</p>
           <div className="w-full absolute bottom-0 left-0">
-            <a
+            <Link
               href={item?.link}
               rel="noopener noreferrer"
               target="_blank"
               className="w-full inline-flex items-center justify-center px-4 py-2 text-base font-semibold whitespace-nowrap leading-6 bg-white border border-motion_ime_purple text-motion_ime_purple rounded shadow-sm hover:bg-motion_ime_purple hover:text-white focus:outline-none focus:shadow-none"
             >
               Buy Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

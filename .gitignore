@@ -5,6 +5,9 @@
 next-env.d.ts
 dist
 
+# bun
+bun.lockb
+
 # yarn
 .yarn
 .yarnrc.yml

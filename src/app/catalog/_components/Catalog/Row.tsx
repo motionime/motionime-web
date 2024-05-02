@@ -62,13 +62,7 @@ export const Row = ({ title, fetchURL, rowID, toAll }: RowProps) => {
               id={"slider" + rowID}
               className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative rounded"
             >
-              {data?.map((item, id) => (
-                <Card
-                  key={id}
-                  item={item}
-                  className="hover:bg-neutral-950/80"
-                />
-              ))}
+              {data?.map((item, id) => <Card key={id} item={item} />)}
             </div>
             <MdChevronRight
               onClick={slideRight}

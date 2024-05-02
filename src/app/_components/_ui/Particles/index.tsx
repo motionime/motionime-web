@@ -1,10 +1,9 @@
 import Particles from "react-particles";
-import { useCallback } from "react";
 import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
+import { useCallback } from "react";
 
 export const ParticlesFireworks = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const particlesInit = useCallback(async (engine: any) => {
     await loadFull(engine);
   }, []);
 

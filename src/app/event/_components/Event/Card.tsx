@@ -1,9 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { beautyPath } from "@/utils/string";
 import { scrollTo } from "@/utils";
 import { NeedToChange } from "@/app/_components/_types";
-import Image from "next/image";
 
 export const Card = ({
   item,
@@ -12,7 +12,7 @@ export const Card = ({
   return (
     <Link
       className="w-[200px] h-[260px] sm:w-[240px] sm:h-[300px] lg:w-[280px] lg:h-[340px] inline-block cursor-pointer relative p-2"
-      href={beautyPath(item?.title)}
+      href={`event/${beautyPath(item?.title)}`}
       onClick={() => scrollTo(0, 0)}
     >
       <div className="w-full h-full rounded overflow-hidden">

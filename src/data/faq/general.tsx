@@ -104,18 +104,30 @@ export const generalTabFAQ = [
                 disini!
               </a>
             </p>
-            <Image src={'/img/faq/start-channel.pn'} alt="start channel" loading="lazy" />
+            <Image
+              src={"/img/faq/start-channel.pn"}
+              alt="start channel"
+              loading="lazy"
+            />
           </li>
           <li>
             <p>Selanjutnya, kalian bisa melihat list role yang tersedia,</p>
-            <Image src={'/img/faq/role-catalog.png'} alt="role catalog" loading="lazy" />
+            <Image
+              src={"/img/faq/role-catalog.png"}
+              alt="role catalog"
+              loading="lazy"
+            />
           </li>
           <li>
             <p>
               Dan kalian sudah bisa memilih/mengklaim role sesuai interest
               kalian, dengan mengklik menu/dropdown seperti gambar dibawah!
             </p>
-            <Image src={'/img/faq/role-mini.png'} alt="role mini" loading="lazy" />
+            <Image
+              src={"/img/faq/role-mini.png"}
+              alt="role mini"
+              loading="lazy"
+            />
           </li>
           <li>
             <p>
@@ -125,7 +137,11 @@ export const generalTabFAQ = [
               yang kalian pilih sebelumnya. Kalian bisa cek di sisi kiri/sidebar
               kalian!
             </p>
-            <Image src={'/img/faq/role-claimed.png'} alt="role claimed" loading="lazy" />
+            <Image
+              src={"/img/faq/role-claimed.png"}
+              alt="role claimed"
+              loading="lazy"
+            />
           </li>
         </ol>
       </>

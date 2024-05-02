@@ -1,8 +1,8 @@
 import * as Accordion from "@radix-ui/react-accordion";
 import { BsChevronDown } from "react-icons/bs";
 
-import { ParentComponentProps } from "@/components/types";
 import { cn } from "@/utils";
+import { ParentComponentProps } from "../../_types";
 
 export const AccordionTrigger = ({
   children,
