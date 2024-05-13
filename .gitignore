@@ -1,5 +1,18 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# next js
+.next
+next-env.d.ts
+dist
+
+# bun
+bun.lockb
+
+# yarn
+.yarn
+.yarnrc.yml
+yarn.lock
+
 # dependencies
 /node_modules
 /.pnp
