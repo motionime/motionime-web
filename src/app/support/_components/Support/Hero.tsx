@@ -25,7 +25,7 @@ export const Hero = () => {
               You are in the right place
             </p>
             <p className="text-xs sm:text-sm md:mb-12 mb-8">
-              If you need any help or have a question, we're here for you
+              If you need any help or have a question, we&apos;re here for you
             </p>
           </div>
 

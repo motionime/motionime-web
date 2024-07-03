@@ -15,6 +15,7 @@ import { useCallback, useEffect, useState } from "react";
 import { getWidth } from "@/utils/screen";
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { TBanner } from "@/app/_components/_types";
+import Image from "next/image";
 
 export const Banner = () => {
   const [banner, setBanner] = useState<TBanner[]>([]);
@@ -55,10 +56,12 @@ export const Banner = () => {
               <SwiperSlide key={index}>
                 <div className="w-full h-full aspect-video cursor-pointer">
                   <div className="absolute w-full h-full bg-gradient-to-r from-black/20"></div>
-                  <img
+                  <Image
                     className="w-full h-full object-cover object-center bg-primary rounded"
                     src={item?.image}
                     alt={item?.title}
+                    width={500}
+                    height={500}
                     loading="lazy"
                   />
                 </div>

@@ -14,7 +14,11 @@ export const TabData = ({ data }: NeedToChange) => {
       <Accordion.Root type="single" collapsible>
         {data?.map((item: NeedToChange, index: number) => {
           return (
-            <Accordion.Item className="p-2" value={index + 1} key={index}>
+            <Accordion.Item
+              className="p-2"
+              value={`item-${index + 1}`}
+              key={index}
+            >
               <AccordionTrigger>{item?.question}</AccordionTrigger>
               <AccordionContent>{item?.answer}</AccordionContent>
               <hr className="my-4 border rounded" />

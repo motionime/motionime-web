@@ -6,6 +6,7 @@ import { Tooltip } from "react-tooltip";
 
 import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { NeedToChange } from "@/app/_components/_types";
+import Image from "next/image";
 
 export const Ads = () => {
   const [ads, setAds] = useState<NeedToChange[]>([]);
@@ -33,9 +34,11 @@ export const Ads = () => {
                 }`}
               >
                 <a href={item?.link} target="_blank" rel="noopener noreferrer">
-                  <img
+                  <Image
                     src={item?.image}
                     alt={item?.title}
+                    width={500}
+                    height={500}
                     className="w-full h-full cursor-pointer bg-primary"
                     data-tooltip-id={item?.title}
                     loading="lazy"

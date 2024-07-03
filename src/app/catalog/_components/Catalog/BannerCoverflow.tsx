@@ -15,6 +15,7 @@ import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { getWidth } from "@/utils/screen";
 import { generateDummyData } from "@/utils";
 import { TBanner } from "@/app/_components/_types";
+import Image from "next/image";
 
 export const BannerCoverflow = () => {
   const [banner, setBanner] = useState<TBanner[]>([]);
@@ -62,9 +63,11 @@ export const BannerCoverflow = () => {
                 <Link target="_blank" href={item?.link}>
                   <div className="w-full h-full group cursor-pointer">
                     <div className="w-full h-full">
-                      <img
+                      <Image
                         src={item?.image}
                         alt={item?.title}
+                        width={500}
+                        height={500}
                         className="w-full h-full rounded-xl box-reflect-below"
                         loading="lazy"
                       />

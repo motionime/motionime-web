@@ -24,10 +24,10 @@ export const Hero = () => {
             Find Your Roles
           </h1>
           <p className="sm:w-[80%] py-4 mx-auto drop-shadow-sm">
-            Explore Roles, From Games to Your Favorite Hobbies, in Indonesia's
-            Largest Community. At Motion Ime, We Provide Space for Your Every
-            Interest - Your Roles are Unlimited - Express Yourself Freely and
-            Unleash Yourself.
+            Explore Roles, From Games to Your Favorite Hobbies, in
+            Indonesia&apos;s Largest Community. At Motion Ime, We Provide Space
+            for Your Every Interest - Your Roles are Unlimited - Express
+            Yourself Freely and Unleash Yourself.
           </p>
         </div>
 
