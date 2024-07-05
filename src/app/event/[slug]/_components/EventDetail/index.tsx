@@ -10,6 +10,7 @@ import { MI_API_BASE_URL } from "@/config/motionime-api.config";
 import { beautyPath, minimizeString } from "@/utils/string";
 import { MotionImeText } from "@/app/_components/_ui/MotionIme/MotionImeText";
 import { ButtonEvent } from "@/app/_components/_ui/Button";
+import Image from "next/image";
 
 export const EventDetail = ({ slug }: { slug: string }) => {
   const [event, setEvent] = useState<any>([]);
@@ -41,10 +42,12 @@ export const EventDetail = ({ slug }: { slug: string }) => {
         {event?.id ? (
           <div className="w-full h-full relative">
             <div className="absolute w-full h-full bg-gradient-to-r from-black"></div>
-            <img
+            <Image
               className="w-full h-full object-cover object-center bg-primary"
               src={event?.banner}
               alt={event?.title}
+              width={500}
+              height={500}
               loading="lazy"
             />
             <div className="absolute w-full top-[20%] p-4 md:p-8 lg:py-16 lg:px-24">

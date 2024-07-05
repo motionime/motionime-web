@@ -2,6 +2,7 @@
 
 import { ParticlesFireworks } from "@/app/_components/_ui/Particles";
 import { useTotalMemberContext } from "@/context/TotalMemberContext";
+import Image from "next/image";
 
 export const GG = () => {
   const member = useTotalMemberContext();
@@ -19,9 +20,11 @@ export const GG = () => {
           </p>
         </div>
         <div className="w-60 overflow-hidden rounded-lg">
-          <img
+          <Image
             src={"/img/gg/wb-dance.gif"}
             alt="gg"
+            width={500}
+            height={500}
             className="w-full h-full object-cover object-center"
           />
         </div>

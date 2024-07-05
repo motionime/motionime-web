@@ -94,7 +94,7 @@ export const Hero = () => {
             </p>
 
             <h1 className="lg:text-6xl md:text-[2.75rem] px-2 text-4xl font-bold">
-              Let's play and grow with{" "}
+              Let&apos;s play and grow with{" "}
               {/* <span className="font-motion_ime">motion ime!</span> */}
               <MotionImeText exclamationMarks />
             </h1>
@@ -111,8 +111,8 @@ export const Hero = () => {
 
             <p className="lg:text-2xl text-lg font-bold text-gray-400 lg:w-[65%] md:w-[80%] w-[95%] mx-auto mb-10 px-1">
               <MotionImeText isCapital /> is a discord community with over{" "}
-              {member?.total || "..."} members. Let's join to become the bocil
-              of death.
+              {member?.total || "..."} members. Let&apos;s join to become the
+              bocil of death.
             </p>
             <ButtonJoinNow
               hero

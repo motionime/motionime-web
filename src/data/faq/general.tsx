@@ -34,7 +34,10 @@ export const generalFAQ = [
           {socialsMenu.map((social, index) => {
             return (
               <li key={index} className="flex gap-1 items-center">
-                <span className="text-lg">{social.icon}</span>:{" "}
+                <span className="text-lg">
+                  <social.icon />
+                </span>
+                :{" "}
                 <a
                   href={social.path}
                   target="_blank"
@@ -105,7 +108,9 @@ export const generalTabFAQ = [
               </a>
             </p>
             <Image
-              src={"/img/faq/start-channel.pn"}
+              src={"/img/faq/start-channel.png"}
+              width={300}
+              height={300}
               alt="start channel"
               loading="lazy"
             />
@@ -114,6 +119,8 @@ export const generalTabFAQ = [
             <p>Selanjutnya, kalian bisa melihat list role yang tersedia,</p>
             <Image
               src={"/img/faq/role-catalog.png"}
+              width={300}
+              height={300}
               alt="role catalog"
               loading="lazy"
             />
@@ -125,6 +132,8 @@ export const generalTabFAQ = [
             </p>
             <Image
               src={"/img/faq/role-mini.png"}
+              width={300}
+              height={300}
               alt="role mini"
               loading="lazy"
             />
@@ -139,6 +148,8 @@ export const generalTabFAQ = [
             </p>
             <Image
               src={"/img/faq/role-claimed.png"}
+              width={300}
+              height={300}
               alt="role claimed"
               loading="lazy"
             />

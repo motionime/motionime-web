@@ -44,7 +44,11 @@ export const GeneralFAQ = () => {
             <Accordion.Root type="multiple">
               {generalFAQ?.map((item, index) => {
                 return (
-                  <Accordion.Item className="p-2" value={index + 1} key={index}>
+                  <Accordion.Item
+                    className="p-2"
+                    value={`item-${index + 1}`}
+                    key={index}
+                  >
                     <AccordionTrigger>{item?.question}</AccordionTrigger>
                     <AccordionContent>{item?.answer}</AccordionContent>
                     <hr className="my-4 border rounded" />
