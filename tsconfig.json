@@ -10,7 +10,8 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": true, FALSEEE
+    
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
